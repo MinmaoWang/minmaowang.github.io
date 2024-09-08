@@ -16,57 +16,74 @@
     <meta property="og:title" content="Minmao Wang’s Personal Site">
     <meta property="og:description" content="Personal website of Minmao Wang">
     <meta property="og:url" content="https://minmaowang.github.io/">
-    <meta property="og:image" content="https://minmaowang.github.io/assets/images/profile.jpg">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Minmao Wang’s Personal Site">
-    <meta name="twitter:description" content="Undergraduate student at Tianjin University">
-    <meta name="twitter:image" content="https://minmaowang.github.io/assets/images/profile.jpg">
-
-    <!-- Favicon and Touch Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="https://minmaowang.github.io/assets/css/main.css">
+    <meta property="og:image" content="assets/images/profile.jpg">
 
     <!-- Custom Styles -->
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
         }
+
         .header {
             background-color: #333;
             color: white;
             padding: 20px;
             text-align: center;
         }
+
         .header h1 {
             margin: 0;
             font-size: 2em;
         }
+
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+
         .sidebar {
-            float: left;
-            width: 25%;
+            flex: 0.5;
             background-color: #fff;
             padding: 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
+        .sidebar img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
         .content {
-            float: right;
-            width: 70%;
+            flex: 3;
+            margin-left: 20px;
             padding: 20px;
             background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         .content h2 {
             font-size: 1.75em;
             margin-bottom: 10px;
         }
+
+        .publication {
+            overflow: auto;
+            margin-bottom: 20px;
+        }
+
+        .publication img {
+            max-width: 100px;
+            margin-right: 15px;
+            float: left;
+        }
+
+        .publication p {
+            overflow: hidden;
+        }
+
         .footer {
             clear: both;
             padding: 10px;
@@ -77,14 +94,17 @@
             bottom: 0;
             width: 100%;
         }
+
         .social-icons {
             list-style: none;
             padding: 0;
         }
+
         .social-icons li {
             display: inline-block;
             margin: 0 10px;
         }
+
         .social-icons a {
             color: white;
             text-decoration: none;
@@ -97,34 +117,42 @@
         <h1>Minmao Wang's Personal Site</h1>
     </div>
 
-    <div class="sidebar">
-        <img src="https://minmaowang.github.io/assets/images/profile.jpg" alt="Minmao Wang" style="width:100%; border-radius: 50%;">
-        <h3>Minmao Wang</h3>
-        <p>Undergraduate Student of Tianjin University</p>
-        <ul class="social-icons">
-            <li><a href="https://github.com/minmaowang"><i class="fab fa-github"></i> GitHub</a></li>
-            <li><a href="mailto:minmaowang@cuhk.edu.cn"><i class="fas fa-envelope"></i> Email</a></li>
-            <li><a href="https://scholar.google.com/citations?user=vdJsnhIAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
-        </ul>
-    </div>
+    <!-- Main Container with Flexbox Layout -->
+    <div class="container">
+        <div class="sidebar">
+            <img src="https://minmaowang.github.io/assets/images/profile.jpg" alt="Minmao Wang">
+            <h3>Minmao Wang</h3>
+            <p>Undergraduate Student of Tianjin University</p>
+            <ul class="social-icons">
+                <li><a href="https://github.com/minmaowang"><i class="fab fa-github"></i> GitHub</a></li>
+                <li><a href="mailto:minmaowang@cuhk.edu.cn"><i class="fas fa-envelope"></i> Email</a></li>
+                <li><a href="https://scholar.google.com/citations?user=vdJsnhIAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
+            </ul>
+        </div>
 
-    <div class="content">
-        <h2>About Me</h2>
-        <p>Hello, 我是王慜懋，来自天津大学信息管理与信息系统专业。感谢您观看我的主页！</p>
-        <hr />
-        <h2>Research Interests</h2>
-        <ul>
-            <li>机器学习 (Machine Learning)</li>
-            <li>深度学习 (Deep Learning)</li>
-            <li>数据挖掘 (Data Mining)</li>
-            <li>Matrix and Tensor Methods</li>
-            <li>Algorithms for Missing Data</li>
-        </ul>
-        <hr />
-        <h2>Selected Publications</h2>
-        <ul>
-            <li>Ziheng Sun, Xudong Wang, Chris Ding, <strong>Minmao Wang</strong>...</li>
-        </ul>
+        <div class="content">
+            <h2>About Me</h2>
+            <p>Hello, 我是王慜懋，来自天津大学信息管理与信息系统专业。感谢您观看我的主页！</p>
+            <hr />
+            <h2>Research Interests</h2>
+            <ul>
+                <li>机器学习 (Machine Learning)</li>
+                <li>深度学习 (Deep Learning)</li>
+                <li>数据挖掘 (Data Mining)</li>
+                <li>Matrix and Tensor Methods</li>
+                <li>Algorithms for Missing Data</li>
+            </ul>
+            <hr />
+            <h2>Selected Publications</h2>
+            <div class="publication">
+                <img src="assets/images/profile.jpg" alt="Publication 1">
+                <p><strong>Ziheng Sun, Xudong Wang, Chris Ding, <strong>Minmao Wang</strong></strong>. Title of the Paper, Journal Name, Year.</p>
+            </div>
+            <div class="publication">
+                <img src="assets/images/profile.jpg" alt="Publication 2">
+                <p><strong>Author 1, Author 2, <strong>Minmao Wang</strong></strong>. Title of the Second Paper, Journal Name, Year.</p>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
@@ -136,8 +164,6 @@
         </ul>
     </div>
 
-    <!-- FontAwesome Icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 
 </html>
