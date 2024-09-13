@@ -18,75 +18,144 @@
     <meta property="og:url" content="https://minmaowang.github.io/">
     <meta property="og:image" content="assets/images/profile.jpg">
 
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
     <!-- Custom Styles -->
     <style>
         body {
             margin: 0;
             padding: 0;
+            font-family: 'Arial', sans-serif;
             background-color: #f5f5f5;
+            transition: background-color 0.5s ease-in-out;
+            font-size: 16px;
         }
 
         .header {
             background-color: #333;
             color: white;
-            padding: 20px;
+            padding: 30px 20px;
             text-align: center;
+            position: relative;
         }
 
         .header h1 {
             margin: 0;
             font-size: 2em;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .container {
             display: flex;
+            flex-wrap: wrap;
             margin: 20px;
+            gap: 20px;
         }
 
         .sidebar {
-            flex: 0.5;
+            flex: 1;
+            min-width: 250px;
             background-color: #fff;
             padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeInLeft 1s ease-in-out;
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
 
         .sidebar img {
             width: 100%;
             border-radius: 50%;
             margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .sidebar img:hover {
+            transform: scale(1.05);
         }
 
         .content {
             flex: 3;
-            margin-left: 20px;
             padding: 20px;
             background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeInRight 1s ease-in-out;
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
 
         .content h2 {
-            font-size: 1.75em;
+            font-size: 1.5em;
             margin-bottom: 10px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            transition: color 0.3s ease-in-out;
         }
 
-        .publication {
-            overflow: auto;
-            margin-bottom: 20px;
+        .content h2:hover {
+            color: #4CAF50;
         }
 
-        .publication img {
-            max-width: 100px;
-            margin-right: 15px;
-            float: left;
+        .content p, .content ul {
+            font-size: 1em;
+            line-height: 1.6;
+            transition: color 0.3s ease-in-out;
         }
 
-        .publication p {
-            overflow: hidden;
+        .content p:hover, .content ul:hover {
+            color: #666;
+        }
+
+        .content button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            font-size: 1em;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .content button:hover {
+            background-color: #4CAF50;
         }
 
         .footer {
             clear: both;
-            padding: 10px;
+            padding: 20px;
             background-color: #333;
             color: white;
             text-align: center;
@@ -98,6 +167,7 @@
         .social-icons {
             list-style: none;
             padding: 0;
+            margin: 10px 0;
         }
 
         .social-icons li {
@@ -107,7 +177,31 @@
 
         .social-icons a {
             color: white;
+            font-size: 1.5em;
             text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            color: #4CAF50;
+        }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .sidebar, .content {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
@@ -126,9 +220,9 @@
             <p>Email: <a href="mailto:wmmmm@tju.edu.cn">wmmmm@tju.edu.cn</a></p>
             <p>Address: Tianjin University, Weijin Road Campus, Nankai District, Tianjin</p>
             <ul class="social-icons">
-                <li><a href="https://github.com/minmaowang"><i class="fab fa-github"></i> GitHub</a></li>
-                <li><a href="mailto:wmmmm@tju.edu.cn"><i class="fas fa-envelope"></i> Email</a></li>
-                <li><a href="https://scholar.google.com/citations?user=vdJsnhIAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
+                <li><a href="https://github.com/minmaowang"><i class="fab fa-github"></i></a></li>
+                <li><a href="mailto:wmmmm@tju.edu.cn"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://scholar.google.com/citations?user=vdJsnhIAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i></a></li>
             </ul>
         </div>
 
@@ -138,15 +232,9 @@
                 <strong>个人信息：</strong>王慜懋<br>
                 专业排名：1/60<br>
                 加权成绩：93.19（3.94）<br>
-                英语水平：雅思7.0<br>
-                课程成绩：67/79门专业课满绩
+                课程成绩：67/79门专业课满绩<br>
                 单学期加权95+（专业第一）<br>
-                单学年加权95+（专业第一）<br>
-                单学期加权成绩专业第一<br>
-                单学年加权成绩专业第一<br>
-                总加权成绩专业第一<br>
-                绩点成绩专业第一<br>
-                综合测评专业第一
+                单学年加权95+（专业第一）
             </p>
             <hr />
             <h2>科研成果</h2>
@@ -154,30 +242,28 @@
                 <li>第一作者——《语言模型增强的引文网络连边因子挖掘》已被CCF-B大数据期刊收录。</li>
                 <li>学生二作《Automated Creation of Reusable and Diverse Toolsets for Enhancing LLM Reasoning》已投AAAI会议(IF:25.57)。</li>
             </ul>
+<!--            <button onclick="alert('更多科研成果即将发布！')">查看更多科研成果</button>-->
             <hr />
             <h2>荣誉奖项</h2>
             <ul>
-                <li>天津大学优异生、天津大学三好学生</li>
+                <li>天津大学优异生</li>
+                <li>天津大学三好学生</li>
                 <li>ICML自动定理证明挑战赛全球亚军</li>
                 <li>2023年第五届全球校园人工智能算法精英大赛全国一等奖</li>
                 <li>美国大学生数学建模大赛M奖</li>
-                <li>第三届美团商业分析精英大赛五十强（6%）</li>
                 <li>第十八届“东风日产杯”全国工业工程优秀课程设计大赛全国一等奖</li>
-                <li>第十八届“挑战杯”全国大学生课外学术科技作品竞赛“揭榜挂帅”专项赛全国三等奖</li>
+                <li>第三届美团商业分析精英大赛五十强（6%）</li>
+                <li>第十八届 “挑战杯”全国大学生课外学术科技作品竞赛“揭榜挂帅”专项赛全国三等奖</li>
             </ul>
-            <hr />
-            <h2>学生工作</h2>
-            <p>新生班主任、朋辈导师、学习委员</p>
-
         </div>
     </div>
 
     <div class="footer">
         <p>&copy; 2024 Minmao Wang.</p>
         <ul class="social-icons">
-            <li><a href="https://github.com/minmaowang"><i class="fab fa-github"></i> GitHub</a></li>
-            <li><a href="https://twitter.com/minmaowang"><i class="fab fa-twitter"></i> Twitter</a></li>
-            <li><a href="https://minmaowang.github.io/feed.xml"><i class="fas fa-rss"></i> Feed</a></li>
+            <li><a href="https://github.com/minmaowang"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://twitter.com/minmaowang"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://minmaowang.github.io/feed.xml"><i class="fas fa-rss"></i></a></li>
         </ul>
     </div>
 
