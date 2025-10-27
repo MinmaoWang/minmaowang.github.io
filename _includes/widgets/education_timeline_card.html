@@ -1,0 +1,31 @@
+{% if site.data.profile.education_timeline %}
+<div class="card mt-3 p-3">
+  <h4 class="card-title">
+    <i class="fas fa-graduation-cap"></i> Education Timeline
+  </h4>
+  <div class="card-body p-0">
+    <div class="timeline">
+      {% for item in site.data.profile.education_timeline %}
+      <div class="timeline-item d-flex align-items-center mb-3">
+        {% if item.logo %}
+        <img src="{{ site.baseurl }}{{ item.logo }}" alt="{{ item.institution }}" class="rounded-circle mr-3" style="width: 50px; height: 50px; object-fit: contain;">
+        {% endif %}
+        <div class="flex-grow-1">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <strong>{{ item.institution }}</strong><br>
+              <span class="text-muted">{{ item.degree }}</span>
+            </div>
+            <span class="badge badge-secondary">{{ item.period }}</span>
+          </div>
+        </div>
+      </div>
+      {% if forloop.last == false %}
+      <div class="timeline-divider mb-3" style="border-top: 1px dashed #dee2e6;"></div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+

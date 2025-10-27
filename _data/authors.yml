@@ -1,0 +1,63 @@
+# This file contains the information of paper authors.
+# If an author appears in this file, their name will be a hyperlink in the paper list.
+# If not, the name will be plain text.
+
+Minmao Wang:
+  first_name: Minmao
+  last_name: Wang
+  chinese_name: 王慜懋
+  url: https://minmaowang.github.io
+
+Hongke Zhao:
+  first_name: Hongke
+  last_name: Zhao
+  chinese_name: 赵洪科
+  url: https://www.adm-cube.online/people/teacher/hongke_zhao
+
+Likang Wu:
+  first_name: Likang
+  last_name: Wu
+  chinese_name: 吴李康
+  url: https://www.adm-cube.online/people/teacher/likang_wu
+
+Qingpeng Cai:
+  first_name: Qingpeng
+  last_name: Cai
+  chinese_name: 蔡青鹏
+  url: https://qingpengcai.github.io/
+
+Rui Zhang:
+  first_name: Rui
+  last_name: Zhang
+
+Shijie Yi:
+  first_name: Shijie
+  last_name: Yi
+
+Fei Pan:
+  first_name: Fei
+  last_name: Pan
+
+Peng Jiang:
+  first_name: Peng
+  last_name: Jiang
+
+Xingchen Liu:
+  first_name: Xingchen
+  last_name: Liu
+
+Zhiyuan Ma:
+  first_name: Zhiyuan
+  last_name: Ma
+
+Zhenya Huang:
+  first_name: Zhenya
+  last_name: Huang
+
+Jiayu Liu:
+  first_name: Jiayu
+  last_name: Liu
+
+Xin Li:
+  first_name: Xin
+  last_name: Li
