@@ -5,8 +5,8 @@ selected:       true
 pub:            "AAAI Conference on Artificial Intelligence (AAAI)"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-danger">CCF-A</span><span class="badge badge-pill badge-publication badge-success">Oral</span>'
 pub_date:       "2025"
-abstract: >-
-  This paper presents a novel approach for automatically creating reusable and diverse toolsets that enhance the reasoning capabilities of large language models.
+# abstract: >-
+#   This paper presents a novel approach for automatically creating reusable and diverse toolsets that enhance the reasoning capabilities of large language models.
 # cover:          /assets/images/covers/llm_toolsets.jpg
 authors:
   - Zhiyuan Ma

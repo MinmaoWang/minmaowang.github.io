@@ -1,0 +1,20 @@
+{% if site.data.profile.awards %}
+<div class="card mt-3 p-3">
+  <h5 class="card-title">
+    <i class="fas fa-trophy"></i> Honors & Awards
+  </h5>
+  <div class="card-body p-0">
+    <ul class="list-unstyled mb-0">
+      {% for item in site.data.profile.awards %}
+      <li class="d-flex justify-content-between align-items-start mb-2">
+        <div>
+          <strong>{{ item.name }}</strong>
+        </div>
+        <span class="badge badge-secondary ml-2">{{ item.date }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endif %}
+

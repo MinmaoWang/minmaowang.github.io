@@ -10,7 +10,7 @@ positions:
 email: "wmmmm@tju.edu.cn"
 # cv_link: link-to-your-cv-file
 # gscholar: vdJsnhIAAAAJ
-github: minmaowang
+# github: minmaowang
 # twitter: minmaowang
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
@@ -25,21 +25,27 @@ short_bio: >-
     <a href="https://www.fudan.edu.cn/" target="_blank">Fudan University</a>. 
     I received my Bachelor's degree in Information Management and Information Systems from 
     <a href="http://www.tju.edu.cn/" target="_blank">Tianjin University</a>, 
-    where I graduated first in my major with a GPA of 3.94/4.0.
+    where I graduated first in my major with a GPA of 3.94/4.0. 
+    And I have been recognized with several academic honors, including the National Scholarship (top 0.2%), 
+    Outstanding Student Award (the University Highest Scholarship) at Tianjin University.
   </p>
   <p>
     During my undergraduate studies, I was fortunate to be advised by 
     <a href="https://www.adm-cube.online/people/teacher/hongke_zhao" target="_blank">Prof. Hongke Zhao</a> and 
     <a href="https://www.adm-cube.online/people/teacher/likang_wu" target="_blank">Prof. Likang Wu</a> at Tianjin University.
-    I also had the privilege of working with 
+    I also had the privilege of being mentored by 
     <a href="https://qingpengcai.github.io/" target="_blank">Dr. Qingpeng Cai</a> 
-    during my internship at Kuaishou Technology.
+    during my research internship at Kuaishou Technology.
   </p>
   <p>
-    My research focuses on applying advanced deep learning methods, including reinforcement learning and large language models, to address real-world problems such as recommender systems. I am particularly interested in how practical modeling ideas can be transformed into effective algorithms that improve user experience and system performance.
+    My research focuses on applying advanced deep learning methods, including reinforcement learning and large language models, 
+    to address real-world problems such as recommender systems. I am particularly interested in how practical modeling ideas 
+    can be transformed into effective algorithms that improve user experience and system performance. 
+    Beyond recommender systems, I am also passionate about exploring intelligent agents and foundation models.
   </p>
   <p>
-  Looking ahead, I hope to continue exploring interesting and impactful problems while building systems that connect intelligent decision-making with meaningful real-world applications.
+    Looking ahead, I hope to keep working on problems that truly interest me and make a real difference. 
+    I genuinely aspire to create things that matter and contribute meaningful value to the world.
   </p>
 portrait_url: /assets/images/profile.jpg
 portrait_caption: >-
@@ -83,7 +89,7 @@ education_timeline:
 awards:
 - name: National Scholarship (Top 0.2%)
   date: 2024
-- name: Tianjin University Outstanding Student (Highest University Honor)
+- name: Outstanding Student of Tianjin University (Highest University Honor)
   date: 2024
 - name: Second Place in ICML 2024 Challenges on Automated Theorem Proving
   date: 2024
