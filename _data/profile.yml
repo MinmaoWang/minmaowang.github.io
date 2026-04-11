@@ -21,8 +21,8 @@ email: "wmmmm@tju.edu.cn"
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am Minmao Wang (王慜懋), currently pursuing a Master's degree in Data Science and Business Analytics at 
-    <a href="https://www.fudan.edu.cn/" target="_blank">Fudan University</a>. 
+    Hi, I'm Minmao Wang (王慜懋), a first-year Master's student in Data Science and Business Analytics at
+    <a href="https://www.fudan.edu.cn/" target="_blank">Fudan University</a>.
     I received my Bachelor's degree in Information Management and Information Systems from 
     <a href="http://www.tju.edu.cn/" target="_blank">Tianjin University</a>, 
     where I graduated first in my major with a GPA of 3.94/4.0. 
@@ -66,14 +66,22 @@ education:
   date: Sep. 2021 - Jun. 2025
 
 experience:
-- name: Kuaishou Technology
-  logo: /assets/images/badges/kuaishou.png
-  position: Advertising Algorithm Intern
-  date: Mar. 2025 - Nov. 2025
 - name: Mobvista (Mintegral)
   logo: /assets/images/badges/mobvista.png
   position: Advertising Algorithm Intern
   date: Aug. 2024 - Dec. 2024
+- name: Kuaishou Technology
+  logo: /assets/images/badges/kuaishou.png
+  position: Advertising Algorithm Intern
+  date: Mar. 2025 - Nov. 2025
+- name: UBS (Swiss Bank)
+  logo: /assets/images/badges/ubs.png
+  position: Quantitative Finance Intern
+  date: Nov. 2025 - Feb. 2026
+- name: Shanghai AI Lab
+  logo: /assets/images/badges/shai.png
+  position: Research Intern
+  date: Mar. 2026 - May 2026
 
 # Education Timeline - Simple version
 education_timeline:
@@ -87,6 +95,8 @@ education_timeline:
   logo: /assets/images/badges/tju.png
 
 awards:
+- name: Best Paper Runner-up, WSDM 2026
+  date: 2026
 - name: National Scholarship (Top 0.2%)
   date: 2024
 - name: Outstanding Student of Tianjin University (Highest University Honor)
