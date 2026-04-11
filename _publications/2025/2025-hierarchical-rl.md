@@ -3,7 +3,7 @@ title:          "Hierarchical Semantic RL: Tackling the Problem of Dynamic Actio
 date:           2026-03-01 00:01:00 +0800
 selected:       true
 pub:            "ACM International Conference on World Wide Web (WWW)"
-pub_last:       ' <span class="badge badge-pill badge-publication badge-info">CCF-A</span><span class="badge badge-pill badge-publication badge-success">Oral</span>'
+pub_last:       ' <span class="badge badge-pill badge-publication badge-danger">CCF-A</span><span class="badge badge-pill badge-publication badge-success">Oral</span>'
 pub_date:       "2026"
 # abstract: >-
 #   We propose a hierarchical semantic reinforcement learning framework that effectively addresses the dynamic action space problem in RL-based recommendation systems by leveraging semantic hierarchies.
