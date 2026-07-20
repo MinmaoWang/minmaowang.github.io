@@ -68,22 +68,26 @@ education:
   date: Sep. 2021 - Jun. 2025
 
 experience:
-- name: Mobvista (Mintegral)
-  logo: /assets/images/badges/mobvista.png
-  position: Advertising Algorithm Intern
-  date: Aug. 2024 - Dec. 2024
 - name: Kuaishou Technology
   logo: /assets/images/badges/kuaishou.png
-  position: Advertising Algorithm Intern
-  date: Mar. 2025 - Nov. 2025
+  position: K-Star Talent Program Algorithm Intern
+  date: Apr. 2026 - Present
+- name: Shanghai AI Lab
+  logo: /assets/images/badges/shai.png
+  position: Research Intern
+  date: Feb. 2026 - Apr. 2026
 - name: UBS (Swiss Bank)
   logo: /assets/images/badges/ubs.png
   position: Quantitative Finance Intern
   date: Nov. 2025 - Feb. 2026
-- name: Shanghai AI Lab
-  logo: /assets/images/badges/shai.png
-  position: Research Intern
-  date: Feb. 2026 - May 2026
+- name: Kuaishou Technology
+  logo: /assets/images/badges/kuaishou.png
+  position: Advertising Algorithm Intern
+  date: Mar. 2025 - Nov. 2025
+- name: Mobvista (Mintegral)
+  logo: /assets/images/badges/mobvista.png
+  position: Advertising Algorithm Intern
+  date: Aug. 2024 - Dec. 2024
 
 # Education Timeline - Simple version
 education_timeline:
